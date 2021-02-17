@@ -3,7 +3,7 @@ export default function manageTodo(state = {
 }, action) {
     switch (action.type) {
         case 'ADD_TODO':
-            console.log("reducer received this action:", action);
+            console.log("Current State: ", state);
             return { todos: [...state.todos , action.payload.text]} 
 
         default: 
